@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_show_photo"
+        android:src="@drawable/poster_aquaman"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY" />
+    <TextView
+        android:id="@+id/show_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/img_show_photo"
+        android:text="@string/show_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow_900"/>
+    <TextView
+        android:textColor="@color/yellow_700"
+        android:id="@+id/show_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_name"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_show_photo"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/show_from" />
+    <TextView
+        android:id="@+id/show_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_from"
+        android:layout_toRightOf="@+id/img_show_photo"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:text="@string/content_aquaman"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/yellow_700" />
+
+</RelativeLayout>
